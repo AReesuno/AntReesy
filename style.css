@@ -1,0 +1,115 @@
+/* The Main Show */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    background-color: #12343b;
+  }
+  
+  #page {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #e1b382;
+    border: 5px solid #c89666;
+    padding: 10px;
+  }
+  
+  header {
+    background-color: #c89666;
+    padding: 10px;
+    text-align: left;
+    border: 2px solid #e1b382;
+  }
+  
+  nav {
+    height: 200px;
+    overflow: auto;
+    margin-top:10px;
+    background-color: #e1b382;
+    padding: 10px;
+    text-align: center;
+    border: 5px solid #e1b382;
+  }
+  
+  #content {
+    height: 100px;
+    margin: 10px 0;
+  }
+  
+  article {
+    float: left;
+    width: 60%; 
+    background-color: #c89666;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-right: 1px solid #c89666;
+  }
+  
+  aside {
+    float: right;
+    width: 35%; 
+    background-color: #c89666;
+    padding: 10px;
+    margin-top: -680px;
+  }
+  
+  footer {
+    font-size: small;
+    clear: both;
+    background-color: #c89666;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Designs for Texts :> */
+
+.left{
+  text-align: left;
+  margin:0px;
+ }
+ 
+ .right{
+   text-align: right;
+   margin:10px;
+  }
+ 
+  .center{
+   text-align: center;
+   margin:10px;
+  }
+
+  ul{
+    text-align: left;
+  }
+
+  a:link { 
+    color: rgb(0, 0, 0);
+    }
+    
+    a:hover {
+     color: rgb(255, 255, 255);
+   }
+    
+    a:active {
+     color: rgb(97, 144, 37);
+   }
+    
+   .one{
+   background-color:#e3e3e3;
+   padding: 20px;
+   border-radius: 25%;
+   margin: 50px
+   }
+    
+   .two:hover{
+   background-color: grey;
+   color: white;
+   padding: 20px;
+   border-radius: 25%;
+   margin: 50px
+   }
