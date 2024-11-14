@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p><label for="story">Tell us your story:</label></p>
+    <textarea id="story" name="story" rows="4" cols="50">It was a dark and stormy night...</textarea>
+    <br>
+    <label>Find what:</label>
+    <br>
+    <input type="text" id="findText">
+    <br><br>
+    <label>Replace:</label>
+    <br>
+    <input type="text" id="replaceText">
+    <br><br>
+    <p id="lengthDisplay"></p>
+    <br>
+    <button type="button" onclick="replaceMe();">Replace</button>
+    <button type="button" onclick="clearMe();">Clear</button>
+    <button type="button" onclick="upperC();">Change to UpperCase</button>
+    <button type="button" onclick="lowerC();">Change to LowerCase</button>
+    <button type="button" onclick="grabLength();">Length</button>
+    <button type="button" onclick="includeMe();">Include</button>
+    <button type="button" onclick="searchMe();">Search</button>
+
+    <script>
+        function replaceMe(){
+            let storT = document.getElementById('story').value;
+            let findT = document.getElementById('findText').value;
+            let replT = document.getElementById('replaceText').value;
+        
+            let newText = storT.replace(new RegExp(findT, 'g'), replT);
+            document.getElementById('story').value = newText;
+        }
+        
+        function clearMe(){
+            document.getElementById('findText').value = "";
+            document.getElementById('replaceText').value = "";
+            console.log('clear');
+        }
+        
+        function upperC(){
+            let storT = document.getElementById('story').value;
+            document.getElementById('story').value = storT.toUpperCase();
+        }
+        
+        function lowerC(){
+            let storT = document.getElementById('story').value;
+            document.getElementById('story').value = storT.toLowerCase();
+        }
+        
+        function grabLength(){
+            let textLength =  document.getElementById('story').value.length;
+            document.getElementById('lengthDisplay').innerText = "Length of text: " + textLength + " characters";
+        }
+    </script>
+</body>
+</html>
