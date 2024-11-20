@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+}
+
+body.christmas {
+    background: url('WhenIsee.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+body.halloween {
+    background: url('spooky.png') no-repeat center center fixed;
+    background-size: cover;
+    color: orangered;
+}
+body.valentine {
+    background: url('alone4ever.jpg') no-repeat center center fixed;
+    background-size: 500px;
+    background-color:pink;
+    color: palevioletred;
+}
+
+body.default {
+    background-color: white;
+    color: black;
+}
+

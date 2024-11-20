@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Story yeah</title>
+    <link rel="stylesheet" href="ResanoE5-3.css">
+</head>
+<body>
+    <p><label for="story">Tell us your story:</label></p>
+    <textarea id="story" name="story" rows="4" cols="50">It was a dark and stormy night...</textarea>
+    <br>
+    <label>Find what:</label>
+    <br>
+    <input type="text" id="findText">
+    <br><br>
+    <label>Replace:</label>
+    <br>
+    <input type="text" id="replaceText">
+    <br><br>
+    <p id="lengthDisplay"></p>
+    <br>
+    <button type="button" onclick="replaceMe();">Replace</button>
+    <button type="button" onclick="clearMe();">Clear</button>
+    <button type="button" onclick="upperC();">Change to UpperCase</button>
+    <button type="button" onclick="lowerC();">Change to LowerCase</button>
+    <button type="button" onclick="grabLength();">Length</button>
+    <button type="button" onclick="includeMe();">Include</button>
+    <button type="button" onclick="searchMe();">Search</button>
+    <br><br>
+    <p>Background theme:</p>
+    <button type="button" onclick="setTheme('default');">Default</button>
+    <button type="button" onclick="setTheme('christmas');">Christmas</button>
+    <button type="button" onclick="setTheme('halloween');">Halloween</button>
+    <button type="button" onclick="setTheme('valentine');">Valentine</button>
+
+    <script src="ResanoE5-3.js"></script>
+
+</body>
+</html>
